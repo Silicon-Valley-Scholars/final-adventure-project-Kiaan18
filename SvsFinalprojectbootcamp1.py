@@ -59,23 +59,27 @@ if "yes":
     else:
         print("That isnt an option! You run out of time and die")
         sys.exit()
-    print(" You enter the Decrepit sewers, but before you can fight the Witherhead, you need to complete some obstacles and parkour, if you fail you restart")
+    print("     You enter the Decrepit sewers, but before you can fight the Witherhead, you need to complete some obstacles and parkour, if you fail you restart")
     print ("There are 3 lines of pillars which you must jump on, but some of them are unstable and will cause you to fall, pick the right one to complete the obstacle")
     time.sleep(3)
-    Parkour = input("choose which pillar to jump on! left, middle, or right.:")
-    if Parkour.lower() == "left":
+    Parkour = ["left", "middle", "right"]
+    print(Parkour)
+    Parkour_Choice = input("Which Pillar do you choose?")
+    if Parkour_Choice.lower() == "left":
         print("You guessed it right! Time for the next challenge")
     else:
         print("You guessed wrong, a magical force sends you to the start of the obsticle and gives you another chance, dont mess it up")
         Parkour = input("choose which pillar to jump on! left, middle, or right.")
         Pillars("left")
-    print("You finished the obsticle, now you enter the next room")
+    print("     You finished the obsticle, now you enter the next room")
     xp += 100
     time.sleep(1)
-    print("You gain 100 experience points")
-    print("You have ", xp," experience total points and you unlock a new spell called Slam!")
-    print("You see the Witherhead's lair, but there are skeletons gaurding the entrace, you have to face them")
-    print("Its a 10 vs 1, you need to use your spell,")
+    print("     You gain 100 experience points")
+    print("     You have ", xp," experience total points and you unlock a new spell called Slam!")
+    time.sleep(2)
+    print("     You see the Witherhead's lair, but there are skeletons gaurding the entrace, you have to face them")
+    time.sleep(2)
+    print("     Its a 10 vs 1, you need to use your spell,")
     Spell = input(" use spell. Yes, No:")
     time.sleep(2)
     if Spell.lower() == "yes":
@@ -84,14 +88,14 @@ if "yes":
     else:
         print("Without the spell you are outnumbered and you stand no chance, you try to fight but you die")
         sys.exit()
-    print(" You enter the room, and see the witherhead, pure evil, you know that your newfound spell wont be enought to stop him")
-    time.sleep(1)
+    print("      You enter the room, and see the witherhead, pure evil, you know that your newfound spell wont be enought to stop him")
+    time.sleep(5)
     print("Then you remember, before entering the dungeon you picked up a glowing flower, now is the time to use it")
-    time.sleep(2)
+    time.sleep(5)
     print(" He is pure evil, the only way to destroy him is with the POWER OF FRIENSHIP!, you hand him the flower and ask to be his friend")
-    time.sleep(1)
+    time.sleep(5)
     print(" He has never experienced such kindness before, you can see the evil flushed out of him! But the king requested his skull, your are left between disobeying the king or betraying your newfound bestfriend! you have a choice to make")
-    time.sleep(2)
+    time.sleep(3)
     Choice =input(" Do you choose to betray your bestfriend, or the king? Best friend, King:")
     if Choice.lower() =="king":
          print(" You become an outlaw and live happily ever after with your newfound bestfriend")
