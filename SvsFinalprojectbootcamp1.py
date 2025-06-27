@@ -63,7 +63,8 @@ if "yes":
     print ("There are 3 lines of pillars which you must jump on, but some of them are unstable and will cause you to fall, pick the right one to complete the obstacle")
     time.sleep(3)
     Parkour = ["left", "middle", "right"]
-    print(Parkour)
+    for i in Parkour:
+        print (i)
     Parkour_Choice = input("Which Pillar do you choose?")
     if Parkour_Choice.lower() == "left":
         print("You guessed it right! Time for the next challenge")
