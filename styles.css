@@ -1,0 +1,26 @@
+nav{
+    background-color:rgb(29, 62, 92);
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul{
+    list-style:none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a{
+    color:white;
+}
+
+p{
+    color:rgb(12, 23, 70);
+    font-size: 24px;
+
+}
+
+
